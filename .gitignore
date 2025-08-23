@@ -1,0 +1,14 @@
+# Fichiers de cache Python
+__pycache__/
+*.pyc
+
+# Dossier d'instance de Flask (contient la DB, etc.)
+/instance/
+
+# Fichiers d'environnement
+.env
+*.env
+
+# Fichiers de l'IDE
+.vscode/
+.idea/
