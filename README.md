@@ -1,6 +1,6 @@
-# Mon Site Python
+# Site Immobilier
 
-Un site web développé avec Python et Flask.
+Un site web immobilier développé avec Python et Flask.
 
 ## Configuration requise
 - Python 3.x
