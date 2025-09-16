@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Mon Site Immobilier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-house-door"></i> ImmoPro
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="bi bi-house-door"></i> Accueil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="properties">
+                                <i class="bi bi-building"></i> Nos biens
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about">
+                                <i class="bi bi-info-circle"></i> À propos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact">
+                                <i class="bi bi-envelope"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        
+                            <a href="login" class="btn btn-outline-light me-2">Connexion</a>
+                            <a href="register" class="btn btn-light">Inscription</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        
+            
+        
+
+        
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title text-center">Connexion</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="login">
+                        <input id="csrf_token" name="csrf_token" type="hidden" value="IjEyYWY2NjlmZWM0ODg4YTBmYTI1MTJlN2VlMGE5ZTI4MDRkMTUxMDYi.aKnQOw.uw1UDEtqQRp7n8DeCbxSerdnX8E">
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" id="email" name="email" required size="32" type="text" value="">
+                            
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Mot de passe</label>
+                            <input class="form-control" id="password" name="password" required size="32" type="password" value="">
+                            
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input class="form-check-input" id="remember_me" name="remember_me" type="checkbox" value="y">
+                            <label class="form-check-label" for="remember_me">Se souvenir de moi</label>
+                        </div>
+                        <div class="d-grid">
+                            <input class="btn btn-primary" id="submit" name="submit" type="submit" value="Connexion">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <p>Pas encore de compte ? <a href="register">Inscrivez-vous ici</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ImmoPro</h5>
+                    <p>Votre partenaire immobilier de confiance.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Accueil</a></li>
+                        <li><a href="properties" class="text-white">Nos biens</a></li>
+                        <li><a href="about" class="text-white">À propos</a></li>
+                        <li><a href="contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> 123 Rue de l'Immobilier, 75000 Paris</li>
+                        <li><i class="bi bi-telephone"></i> 01 23 45 67 89</li>
+                        <li><i class="bi bi-envelope"></i> contact@immopro.fr</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 ImmoPro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
+</html>

@@ -15,8 +15,13 @@ def index():
 def about():
     return render_template('about.html')
 
-@main.route('/contact')
+@main.route('/contact', methods=['GET', 'POST'])
 def contact():
+    if request.method == 'POST':
+        # Ici, vous pouvez ajouter la logique pour traiter le formulaire
+        # Par exemple, envoyer un email ou enregistrer en base de données
+        # Pour l'instant, nous allons simplement afficher un message de succès
+        return render_template('contact.html', success=True)
     return render_template('contact.html')
 
 @main.route('/properties')

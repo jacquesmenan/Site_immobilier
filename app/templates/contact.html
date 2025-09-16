@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if success %}
+<div class="alert alert-success" role="alert">
+    Votre message a été envoyé avec succès ! Nous vous répondrons dès que possible.
+</div>
+{% endif %}
+<div class="container mt-5">
+    <h1>Contactez-nous</h1>
+    <p>Pour toute question ou information, n'hésitez pas à nous contacter :</p>
+    
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3>Informations de contact</h3>
+            <p><i class="fas fa-envelope"></i> Email: contact@site-immobilier.com</p>
+            <p><i class="fas fa-phone"></i> Téléphone: +33 1 23 45 67 89</p>
+            <p><i class="fas fa-map-marker-alt"></i> Adresse: 123 Rue de l'Immobilier, 75000 Paris</p>
+        </div>
+        <div class="col-md-6">
+            <h3>Formulaire de contact</h3>
+            <form method="POST" action="{{ url_for('main.contact') }}">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom complet</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
